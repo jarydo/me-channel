@@ -27,11 +27,11 @@ const channels: ChannelType[] = [
   { name: "Project 5", repo: "", date: "2025-07-20" },
   { name: "Project 6", repo: "", date: "2025-07-27" },
   { name: "Project 7", repo: "", date: "2025-08-03" },
-  { name: "Project 8", repo: "", date: "" },
-  { name: "Project 9", repo: "", date: "" },
-  { name: "Project 10", repo: "", date: "" },
-  { name: "Project 11", repo: "", date: "" },
-  { name: "Project 12", repo: "", date: "" },
+  { name: "Project 8", repo: "", date: "2025-08-10" },
+  { name: "Project 9", repo: "", date: "2025-08-17" },
+  { name: "Project 10", repo: "", date: "2025-08-24" },
+  { name: "Project 11", repo: "", date: "2025-08-31" },
+  { name: "Project 12", repo: "", date: "2025-09-07" },
 ];
 
 function App() {
