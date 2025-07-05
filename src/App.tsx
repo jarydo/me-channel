@@ -14,9 +14,9 @@ import Channel from "./components/Channel";
 const channels: ChannelType[] = [
   {
     name: "Scratch Away",
-    repo: "/scratch-away",
+    repo: "/scratch-art",
     date: "2025-06-22",
-    img: "scratch_away.png",
+    img: "scratch_art.png",
   },
   {
     name: "Curiosity Cards",
