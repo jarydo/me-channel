@@ -12,5 +12,5 @@ export default defineConfig({
       usePolling: true,
     },
   },
-  base: "https://channel.jaryddiamond.com/",
+  base: "https://me-channel-jaryd-diamonds-projects.vercel.app/",
 });
