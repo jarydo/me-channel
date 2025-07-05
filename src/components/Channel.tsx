@@ -65,7 +65,7 @@ export default function Channel({
 
   return Date.parse(date) <= Date.now() ? (
     <div
-      className="rounded-[20px] h-full max-h-44 border-4 border-[#C3C3C3] bg-[#F7F7F7] transition-all duration-300 hover:border-[#36BFED] hover:shadow-[0_0_20px_rgba(54,191,237,0.5)] overflow-hidden"
+      className="rounded-[20px] h-full max-h-36 border-4 border-[#C3C3C3] bg-[#F7F7F7] transition-all duration-300 hover:border-[#36BFED] hover:shadow-[0_0_20px_rgba(54,191,237,0.5)] overflow-hidden"
       key={name}
       onClick={() => (window.location.href = repo)}
     >
@@ -77,7 +77,7 @@ export default function Channel({
     </div>
   ) : (
     <div
-      className="flex items-center h-full max-h-44 justify-center rounded-[20px] border-4 border-[#C3C3C3] bg-[rgb(231_231_231/60%)] text-[rgb(121_121_121/50%)] text-[20px]"
+      className="flex items-center h-full max-h-36 justify-center rounded-[20px] border-4 border-[#C3C3C3] bg-[rgb(231_231_231/60%)] text-[rgb(121_121_121/50%)] text-[20px]"
       key={name}
     >
       {formatDate(date)}

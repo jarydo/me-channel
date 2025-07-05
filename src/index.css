@@ -14,7 +14,7 @@
   font-style: normal;
 }
 body {
-  /* @apply cursor-default; */
+  cursor: url('/wii_assets/cursor.png'), auto !important;
 }
 @layer utilities {
   /* Chrome, Safari and Opera */
