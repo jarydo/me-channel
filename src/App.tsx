@@ -4,6 +4,8 @@ import footerC from "/wii_assets/footer_c.png";
 import footerR from "/wii_assets/footer_r.svg";
 import homeButton from "/wii_assets/home_button.png";
 import mailButton from "/wii_assets/mail_button.png";
+import homeIcon from "/wii_assets/home_icon.png";
+import mailIcon from "/wii_assets/mail_icon.svg";
 import buttonRight from "/wii_assets/button_right.svg";
 import buttonLeft from "/wii_assets/button_left.svg";
 import type { ChannelType } from "./types/ChannelType";
@@ -76,7 +78,7 @@ function App() {
     const daysOfWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
     const dayOfWeek = daysOfWeek[date.getDay()];
     const day = date.getDate();
-    const month = date.getMonth() + 1; // JavaScript months are 0-indexed
+    const month = date.getMonth() + 1;
 
     return `${dayOfWeek} ${month}/${day}`;
   };
@@ -84,9 +86,42 @@ function App() {
   const { hours, minutes, ampm } = formatTime(time);
   const dateString = formatDate(time);
 
+  if (isMobile) {
+    return (
+      <div className="flex font-wii cursor-wii min-h-screen flex-col bg-[repeating-linear-gradient(to_bottom,#F8F8F8_0px,#F8F8F8_8px,transparent_8px,transparent_10px)]">
+        <div className="flex justify-between items-center px-9 pt-8">
+          <img
+            onClick={() => (window.location.href = "https://jaryddiamond.com")}
+            src={homeIcon}
+            alt="home"
+            className="h-10"
+          />
+          <div className="flex items-center gap-2 text-gray-600 text-4xl font-light tracking-wider">
+            <span>{hours}</span>
+            <span className="text-4xl opacity-70 animate-flash">:</span>
+            <span>{minutes}</span>
+            <span className="text-sm font-normal align-text-bottom">
+              {ampm}
+            </span>
+          </div>
+          <img
+            onClick={() => window.open("mailto:jarydnoahdiamond@gmail.com")}
+            src={mailIcon}
+            alt="mail"
+            className="w-10 h-10 top-0"
+          />
+        </div>
+
+        <div className="grid grid-cols-2 gap-x-6 gap-y-8 p-9">
+          {channels.map((channelData) => Channel({ channelData, isMobile }))}
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="flex font-wii cursor-wii min-h-screen flex-col bg-[repeating-linear-gradient(to_bottom,#F8F8F8_0px,#F8F8F8_8px,transparent_8px,transparent_10px)]">
-      <div className="flex-1 grid grid-cols-4 gap-[25px] p-12">
+      <div className="flex-1 grid grid-cols-4 gap-5 px-12 py-8 auto-rows-fr">
         {channels.map((channelData) => Channel({ channelData, isMobile }))}
       </div>
 
