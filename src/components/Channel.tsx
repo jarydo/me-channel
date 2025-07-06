@@ -39,7 +39,7 @@ export default function Channel({
   };
 
   if (isMobile) {
-    return Date.parse(date) <= Date.now() ? (
+    return Date.parse(date) + 1000 * 60 * 60 * 23 <= Date.now() ? (
       <div
         className="rounded-[12px] h-36 w-36 p-2 bg-white border-2 border-[#C3C3C3]"
         key={name}
@@ -63,7 +63,7 @@ export default function Channel({
     );
   }
 
-  return Date.parse(date) <= Date.now() ? (
+  return Date.parse(date) + 1000 * 60 * 60 * 23 <= Date.now() ? (
     <div
       className="rounded-[20px] h-full max-h-36 border-4 border-[#C3C3C3] bg-[#F7F7F7] transition-all duration-300 hover:border-[#36BFED] hover:shadow-[0_0_20px_rgba(54,191,237,0.5)] overflow-hidden"
       key={name}
