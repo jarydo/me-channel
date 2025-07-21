@@ -31,7 +31,12 @@ const channels: ChannelType[] = [
     img: "showstubs.png",
   },
   { name: "Watcard", repo: "/watcard", date: "2025-07-13", img: "watcard.png" },
-  { name: "Project 5", repo: "", date: "2025-07-20" },
+  {
+    name: "Mii Maker",
+    repo: "/miimaker",
+    date: "2025-07-20",
+    img: "mii_maker.png",
+  },
   { name: "Project 6", repo: "", date: "2025-07-27" },
   { name: "Project 7", repo: "", date: "2025-08-03" },
   { name: "Project 8", repo: "", date: "2025-08-10" },
