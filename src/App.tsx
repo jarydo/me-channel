@@ -37,7 +37,12 @@ const channels: ChannelType[] = [
     date: "2025-07-20",
     img: "mii_maker.png",
   },
-  { name: "Project 6", repo: "", date: "2025-07-31" },
+  {
+    name: "Tao Mandalas",
+    repo: "/tao-mandalas",
+    date: "2025-07-27",
+    img: "tao_mandalas.png",
+  },
   { name: "Project 7", repo: "", date: "2025-08-03" },
   { name: "Project 8", repo: "", date: "2025-08-10" },
   { name: "Project 9", repo: "", date: "2025-08-17" },
