@@ -43,7 +43,12 @@ const channels: ChannelType[] = [
     date: "2025-07-27",
     img: "tao_mandalas.png",
   },
-  { name: "Birthday Simulator", repo: "", date: "2025-08-07" },
+  {
+    name: "Birthday Simulator",
+    repo: "/birthday-simulator",
+    date: "2025-08-07",
+    img: "birthday_simulator.png",
+  },
   { name: "Project 8", repo: "", date: "2025-08-10" },
   { name: "Project 9", repo: "", date: "2025-08-17" },
   { name: "Project 10", repo: "", date: "2025-08-24" },
