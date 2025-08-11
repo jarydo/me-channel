@@ -49,7 +49,7 @@ const channels: ChannelType[] = [
     date: "2025-08-06",
     img: "birthday_simulator.png",
   },
-  { name: "Project 8", repo: "", date: "2025-08-10" },
+  { name: "Project 8", repo: "", date: "2025-08-12" },
   { name: "Project 9", repo: "", date: "2025-08-17" },
   { name: "Project 10", repo: "", date: "2025-08-24" },
   { name: "Project 11", repo: "", date: "2025-08-31" },
