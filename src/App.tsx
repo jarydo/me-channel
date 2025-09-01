@@ -67,7 +67,7 @@ const channels: ChannelType[] = [
     date: "2025-08-26",
     img: "slope_sleuth.png",
   },
-  { name: "Project 11", repo: "", date: "2025-08-31" },
+  { name: "Project 11", repo: "", date: "2025-09-02" },
   { name: "Project 12", repo: "", date: "2025-09-07" },
 ];
 
