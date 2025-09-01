@@ -68,7 +68,7 @@ const channels: ChannelType[] = [
     img: "slope_sleuth.png",
   },
   { name: "Project 11", repo: "", date: "2025-09-02" },
-  { name: "Project 12", repo: "", date: "2025-09-07" },
+  { name: "Project 12", repo: "", date: "2025-09-14" },
 ];
 
 function App() {
