@@ -3,9 +3,9 @@ import footerL from "/wii_assets/footer_l.svg";
 import footerC from "/wii_assets/footer_c.png";
 import footerR from "/wii_assets/footer_r.svg";
 import homeButton from "/wii_assets/home_button.png";
-import mailButton from "/wii_assets/mail_button.png";
+import xButton from "/wii_assets/x_button.png";
 import homeIcon from "/wii_assets/home_icon.png";
-import mailIcon from "/wii_assets/mail_icon.svg";
+import xIcon from "/wii_assets/x_icon.svg";
 import buttonRight from "/wii_assets/button_right.svg";
 import buttonLeft from "/wii_assets/button_left.svg";
 import type { ChannelType } from "./types/ChannelType";
@@ -145,10 +145,10 @@ function App() {
             </span>
           </div>
           <img
-            onClick={() => window.open("mailto:jarydnoahdiamond@gmail.com")}
-            src={mailIcon}
-            alt="mail"
-            className="w-10 h-10 top-0"
+            onClick={() => window.open("https://x.com/jaryddiamond")}
+            src={xIcon}
+            alt="X"
+            className="w-9 h-9 top-0"
           />
         </div>
 
@@ -234,13 +234,9 @@ function App() {
 
             <button
               className="ml-[52px] relative z-10 transition-all duration-200 hover:scale-110 cursor-wii"
-              onClick={() => window.open("mailto:jarydnoahdiamond@gmail.com")}
+              onClick={() => window.open("https://x.com/jaryddiamond")}
             >
-              <img
-                src={mailButton}
-                alt="mail"
-                className="w-[100px] h-[100px]"
-              />
+              <img src={xButton} alt="X" className="w-[100px] h-[100px]" />
             </button>
           </div>
         </div>
