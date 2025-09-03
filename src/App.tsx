@@ -67,7 +67,12 @@ const channels: ChannelType[] = [
     date: "2025-08-26",
     img: "slope_sleuth.png",
   },
-  { name: "Project 11", repo: "", date: "2025-09-02" },
+  {
+    name: "The CyPress",
+    repo: "https://x.com/jaryddiamond/status/1963035425586741454",
+    date: "2025-09-02",
+    img: "cypress.png",
+  },
   { name: "Project 12", repo: "", date: "2025-09-14" },
 ];
 
