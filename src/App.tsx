@@ -73,7 +73,7 @@ const channels: ChannelType[] = [
     date: "2025-09-02",
     img: "cypress.png",
   },
-  { name: "Project 12", repo: "", date: "2025-09-18" },
+  { name: "Project 12", repo: "", date: "2025-09-20" },
 ];
 
 function App() {
