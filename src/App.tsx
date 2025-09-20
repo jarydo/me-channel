@@ -73,7 +73,12 @@ const channels: ChannelType[] = [
     date: "2025-09-02",
     img: "cypress.png",
   },
-  { name: "Project 12", repo: "", date: "2025-09-20" },
+  {
+    name: "PRESTO Wand",
+    repo: "https://x.com/jaryddiamond/status/1969488192828068213",
+    date: "2025-09-19",
+    img: "presto_wand.png",
+  },
 ];
 
 function App() {
